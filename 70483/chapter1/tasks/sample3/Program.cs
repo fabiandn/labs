@@ -10,6 +10,15 @@ namespace sample3
     {
         static void Main(string[] args)
         {
+            Task<int> t = Task.Run(() =>
+            {
+                return 42;
+            }).ContinueWith((i) =>
+            {
+                return i.Result * 2;
+            });
+
+            Console.WriteLine(t.Result);
         }
     }
 }
