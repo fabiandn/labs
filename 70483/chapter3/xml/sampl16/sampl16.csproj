@@ -48,8 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="person.xsc">
+      <DependentUpon>person.xsd</DependentUpon>
+    </None>
     <None Include="person.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="person.xss">
+      <DependentUpon>person.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
